@@ -1,0 +1,41 @@
+# === Build artifacts ===
+bin/                # All compiled binaries and executables
+*.o                 # Object files
+*.obj               # Object files (Windows)
+*.out               # Executables like a.out
+*.exe               # Executables (Windows)
+
+# === Simulation / experimental outputs ===
+*.csv               # CSV files used for logging or output
+*.dat               # Data output files
+*.log               # Log files
+*.tmp               # Temporary files
+output/
+data/               # If this folder stores output or generated data
+
+# === Editor / IDE configurations ===
+.vscode/            # Visual Studio Code settings
+.idea/              # JetBrains IDE settings (e.g., CLion)
+
+# === OS-specific system files ===
+.DS_Store           # macOS directory metadata
+Thumbs.db           # Windows image thumbnails
+__MACOSX/           # macOS archive residue
+
+# === Python cache files (in case you use Python for post-processing) ===
+__pycache__/
+*.pyc
+*.pyo
+*.ipynb_checkpoints/
+
+# === LaTeX build artifacts ===
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdfsync
+*.bbl
+*.blg
+
+
