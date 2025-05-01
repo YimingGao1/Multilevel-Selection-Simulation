@@ -1,20 +1,20 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -O2 -I../../include -I../../include/luo_model
+CXXFLAGS = -std=c++11 -O2 -I../../include -I../../include/game_theory_model
 
-UTILS = ../../src/luo_model/utils.cpp
+UTILS = ../../src/game_theory_model/utils.cpp
 
 
 EXP1_MAIN = exp1_base_model/main.cpp
-EXP1_EXEC = ../../bin/luo_model/exp1_base_model/exec
-EXP1_BIN_DIR = ../../bin/luo_model/exp1_base_model
+EXP1_EXEC = ../../bin/game_theory_model/exp1_base_model/exec
+EXP1_BIN_DIR = ../../bin/game_theory_model/exp1_base_model
 
 EXP2_MAIN = exp2_model_mutation/main.cpp
-EXP2_EXEC = ../../bin/luo_model/exp2_model_mutation/exec
-EXP2_BIN_DIR = ../../bin/luo_model/exp2_model_mutation
+EXP2_EXEC = ../../bin/game_theory_model/exp2_model_mutation/exec
+EXP2_BIN_DIR = ../../bin/game_theory_model/exp2_model_mutation
 
 EXP3_MAIN = exp3_G_mutation/main.cpp
-EXP3_EXEC = ../../bin/luo_model/exp3_G_mutation/exec
-EXP3_BIN_DIR = ../../bin/luo_model/exp3_G_mutation
+EXP3_EXEC = ../../bin/game_theory_model/exp3_G_mutation/exec
+EXP3_BIN_DIR = ../../bin/game_theory_model/exp3_G_mutation
 
 
 all: $(EXP1_EXEC) $(EXP2_EXEC) $(EXP3_EXEC)
@@ -40,4 +40,4 @@ $(EXP3_EXEC): $(EXP3_MAIN) $(UTILS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
-	rm -rf ../bin/luo_model/*
+	rm -rf ../bin/game_theory_model/*
